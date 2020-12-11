@@ -38,7 +38,7 @@ body {
     background: transparent;
 }
 
-/* DON WWF */
+/* DIV DON WWF */
 #don-wwf {
     min-height: 15vh;
     border: solid black 1px;
@@ -77,6 +77,28 @@ body {
     width: 90%;
     color: black;
 }
+
+
+/* CONTENT */
+    /* P1 */
+.content {
+    border: solid black;
+}
+#paragraphe1 {
+    background: lightgrey;
+    border: dotted red;
+}
+h3::after {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 11.5px;
+    width: 50px;
+    height: 3px;
+    background: black;
+}
+
 
 
 
