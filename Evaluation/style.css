@@ -1,6 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
-    min-height: 2000px;;
+    font-family: Avenir, sans-serif;
+    background-image: url('images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .headr {
@@ -23,9 +25,9 @@ body {
 .scroll-down-headr {
    background: transparent;
    position: absolute;
-   left: 50%;
-   right: 50%;
-   bottom: 23%;
+   left: 45%;
+   right: 45%;
+   bottom: 25%;
    opacity: 0.7;
 }
 .scroll-down-headr:visited {
@@ -44,26 +46,33 @@ body {
 #don-wwf {
     min-height: 15vh;
     border-top: solid black 1px;
+    border-bottom: solid black 1px;
     box-shadow: 0px 15px 20px 2px rgba(204,204,204,0.4);
-    background: linear-gradient(180deg, rgb(103, 125, 145), rgb(236, 236, 236));
+    font-size: 1rem;
 }
 #div-don {
-    border-left: 0.5px solid gray;
-    background: rgba(222, 94, 9);
+    background: rgb(202, 161, 46);
+    color: black;
 }
 #div-wwf {
     border-right: 1px solid gray;
-    background: lightseagreen;
+    background: rgb(12, 29, 41);
 }
 #div-don, #div-wwf {
     width: 50%;
+}
+.btn-don {
+    background: rgb(250, 242, 232);
+    border: solid 3px rgb(17, 77, 77);
+}
+.btn-wwf {
+    background: rgb(250, 242, 232);
+    border: solid 3pxrgb(17, 77, 77);
 }
 #div-don > .btn-don, #div-wwf > .btn-wwf {
     width: 85%;
     height: 3.5em;
     border-radius: 10px;
-    border: solid 1px black;
-    
 }
 #div-don > .btn-don:hover, #div-wwf > .btn-wwf:hover {
     transform: scale(1.1, 1.1);
@@ -84,16 +93,25 @@ body {
 /* CONTENT */
 .content {
     width: 100%;
- /*background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');*/
+ /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');*/
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 .paragraphe {
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 10rem;
     margin-top: 5rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    padding: 3rem;
+
+    z-index: 1;
+    background: rgb(226, 224, 221);
+    border: rgb(17, 77, 77) solid 3px;
+
+    border-radius: 5px;
 }
+
 .content > h3, p {
     opacity: 1;
 }
@@ -108,14 +126,39 @@ h3::after {
     height: 2px;
     background: black;
 }
-.content  p {
+.content p {
     line-height: 2.7;
 }
+/* BOX BEHIND */
+article {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+}
+.box-behind {
+   position: absolute;
+   opacity: 0.7;
+   top: 2.5rem;
+   right: -1rem;
+   width: 90%;
+   height: 25em;
 
-/* PARALLAX */
+   /*background: rgb(166, 186, 219);*/
+   background: rgb(161, 178, 204);
+   border-radius: 5px;
+   border: rgb(9, 36, 36) solid 3px;
+}
+#box-behind-qui {
+    height: 22em;
+}
+#box-behind-quoi {
+    height: 32em;
+}
+
+/* PARALLAX 
 .parallax {
     background-image: url('images/parallax_images/us2.jpeg');
-    opacity: 0.4;
 
     min-height: 250px;
 
@@ -124,6 +167,16 @@ h3::after {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax2 {
+    background-image: url('images/wildfire.jpeg');
+
+    min-height: 250px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 
 
 
@@ -188,6 +241,10 @@ footer #signature {
 }
 footer #info {
     margin-top: 2.5em;
+}
+footer ul li {
+    height: 6em;
+    padding: 1em;
 }
 
 
