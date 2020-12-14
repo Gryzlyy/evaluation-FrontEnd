@@ -19,7 +19,7 @@
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12 text-center">
-                            <h1 class="font-weight-light text-headr text-center">TAKE ACTIONS.</h1>
+                            <h1 class="font-weight-bold text-headr text-center">TAKE ACTIONS.</h1>
                             <!--<p class="lead text-headr-lil">Ils sont en danger</p>-->
                         </div>
                     </div>
@@ -33,20 +33,16 @@
             </div>
         </header>
               
-            <!--DIV WWF & DON-->
-        <div class="row d-flex flex-row" id="don-wwf">
-                            <!--WWF-->
-            <div id="div-wwf" class="text-center text-sm-center text-md-center text-lg-center text-xl-center">
-                <button id="btn-wwf" class="btn-wwf my-4"><a class="div-hyperlink" href="wwf.fr">WWF.fr</a></button>
-            </div>
+            <!--DIV DON-->
+        <div class="row" id="don-wwf">
                             <!--DON-->
             <div id="div-don" class="text-center text-sm-center text-md-center text-lg-center text-xl-center">
-                    <button id="btn-don" class="btn-don my-4">FAITES UN DON</button>
+                    <button id="btn-don" class="btn-don my-2">FAITES UN DON</button>
             </div>
         </div>
     
             <!--CONTENT-->
-        <section class="content mt-5" id="content">
+        <section class="content" id="content">
                 <article class="content-wrapper">
                     <div class="box-behind" id="box-behind-qui"></div>
                     <div id="Qui" class="paragraphe">
@@ -57,9 +53,10 @@
                     </div>
                 </article>
                 
-                <article class="content-wrapper"></div>
-                    <div class="box-behind" id="box-behind-quoi"></div>
-                    <div id="Quoi" class="paragraphe">
+                <article class="content-wrapper parallax"></div>
+                    <div class="box-behind-parallax"></div>
+                    <!--<div class="box-behind" id="box-behind-quoi"></div>-->
+                    <div id="Quoi" class="paragraphe-parallax pb-5">
                         <h3 class="text-center mt-1">QUE FAISONS-NOUS ?</h3>
                         <p class="text-justify text-center mt-3 p-1">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa excepturi inventore deleniti nulla veritatis laudantium, ut
@@ -86,12 +83,17 @@
                     </div>
                 </article>
 
-                <article class="content-wrapper">
-                    <div class="box-behind" id="box-behind-join"></div>
-                    <div id="Join" class="paragraphe">
+                <article class="content-wrapper parallax-help">
+                    <div class="box-behind-parallax-help"></div>
+                    <video poster="images/parallax_images/parallax-help.mov" id="bgvid"
+                    playsinline autoplay muted loop>
+                        <source src="images/parallax_images/parallax-help.mov" type="video/webm">
+                    </video>
+                    <!--<div class="box-behind" id="box-behind-join"></div>-->
+                    <div id="Join" class="paragraphe-parallax">
                         <h3 class="text-center mt-1">COMMENT POUVEZ-VOUS LE FAIRE ?</h3>
                         <p class="text-justify text-center mt-3 p-1">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laudantium, unde dicta rem perferendis provident qui optio debitis! Quo eum obcaecati veniam reiciendis ea, quia dolorem ad quaerat optio consequatur.</p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laudantium, unde dicta rem perferendis provident qui optio debitis!</p>
                     </div>
                 </article>
         </section>
@@ -100,8 +102,8 @@
 
                 <!--FOOTER-->
         <footer class="border-top">
-                <div class="row mx-2 mt-5 mb-2 list-group list-group-horizontal text-center">
-                    <a href="#don-wwf"><span id="coin" class="list-group-item rounded">FAIRE UN DON
+                <div class="row mx-2 mt-5 list-group list-group-horizontal text-center">
+                    <a href="#don-wwf"><span class="list-group-item rounded">FAIRE UN DON
                     </span></a>
                 </div>
                 <ul class="text-center mx-2 my-2 list-group list-group-horizontal">
@@ -111,7 +113,7 @@
                     <a href="#Comment"><li class="list-group-item mx-1 rounded">Nos campagnes</li></a>  
                 </ul>
                 <div class="row mx-2 mt-2 mb-1 list-group list-group-horizontal text-center">
-                    <a href="#don-wwf"><span id="coin" class="list-group-item rounded">REJOIGNEZ L'ACTION
+                    <a href="#don-wwf"><span class="list-group-item rounded">REJOIGNEZ L'ACTION
                     </span></a>
                 </div>
                 <p class="text-center mb-1" id="signature">2020</p>
@@ -119,17 +121,6 @@
                         Le Fonds Mondial pour la Nature France, dit WWF France est une Fondation reconnue d'utilité publique.
                         Numéro d’enregistrement et SIREN : 302 518 667.
                 </p>
-
-
-                    <!--BACK TO TOP-->
-                 <!-- <a href="#logo-wwf" class="back-to-top">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
-                    </svg>
-                </a> -->
-
-                 
         </footer>
     </div>
 

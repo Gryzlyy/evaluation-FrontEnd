@@ -1,6 +1,6 @@
 body {
     font-family: Avenir, sans-serif;
-    background-image: url('images/bg1.jpg');
+    /*background-image: url('images/bg1.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,6 +19,9 @@ body {
     width: 6em;
     height: 6em;
     opacity: 0.85;
+}
+h1 {
+    font-size: 25px;
 }
 
 /* SCROLL DOWN HEADER */
@@ -42,60 +45,39 @@ body {
     background: transparent;
 }
 
-/* DIV DON WWF */
+/* DIV DON */ 
 #don-wwf {
     min-height: 15vh;
-    border-top: solid black 1px;
-    border-bottom: solid black 1px;
-    box-shadow: 0px 15px 20px 2px rgba(204,204,204,0.4);
     font-size: 1rem;
 }
 #div-don {
-    background: rgb(202, 161, 46);
+    background-color: rgb(253, 252, 242);
     color: black;
-}
-#div-wwf {
-    border-right: 1px solid gray;
-    background: rgb(12, 29, 41);
-}
-#div-don, #div-wwf {
-    width: 50%;
+    width: 100%;
 }
 .btn-don {
-    background: rgb(250, 242, 232);
-    border: solid 3px rgb(17, 77, 77);
-}
-.btn-wwf {
-    background: rgb(250, 242, 232);
-    border: solid 3pxrgb(17, 77, 77);
-}
-#div-don > .btn-don, #div-wwf > .btn-wwf {
-    width: 85%;
-    height: 3.5em;
+    background: rgb(255, 255, 240);
+    border: solid 3px rgb(36, 59, 78);
+    width: 90%;
+    height: 5em;
     border-radius: 10px;
 }
-#div-don > .btn-don:hover, #div-wwf > .btn-wwf:hover {
+#div-don > .btn-don:hover {
     transform: scale(1.1, 1.1);
-}   
-.div-hyperlink:visited {
-    color: black;
-}
-.div-hyperlink:hover {
-    color: black;
-}
-.div-hyperlink {
-    text-decoration: none;
-    width: 90%;
-    color: black;
-}
+} 
 
 
 /* CONTENT */
 .content {
+    display: flex;
+    flex-direction: column;
     width: 100%;
  /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');*/
     background-size: cover;
     background-repeat: no-repeat;
+    background: rgb(253, 252, 242);
+
+    padding-top: 5em;
 
 }
 .paragraphe {
@@ -106,9 +88,8 @@ body {
     padding: 3rem;
 
     z-index: 1;
-    background: rgb(226, 224, 221);
-    border: rgb(17, 77, 77) solid 3px;
-
+    background: rgb(255, 255, 240);
+    border: rgb(52, 84, 111) solid 3px;
     border-radius: 5px;
 }
 
@@ -129,6 +110,61 @@ h3::after {
 .content p {
     line-height: 2.7;
 }
+#pourquoi a {
+    padding-bottom: 5em;
+}
+
+/* PARALLAX */
+.parallax { 
+    display: flex;
+    background-image: url("images/parallax_images/parallax-bg-1.jpeg");
+  
+    height: 30rem;
+    width: 100vw;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+.paragraphe-parallax {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+    padding: 3rem;
+    z-index: 2;
+}
+.box-behind-parallax {
+    position: absolute;
+    opacity: 0.75;
+    background: white;
+    width: 100%;
+    height: 30em;
+    z-index: 1;
+}
+.box-behind-parallax-help {
+        position: absolute;
+        top: 4.4em;
+    
+        opacity: 0.8;
+        background: white;
+        width: 100%;
+        height: 17.1em;
+        z-index: 1;
+}
+video { 
+    position: absolute;
+    top: 13em;
+    z-index: 0;
+    left: 50%;
+    width: 100%;
+    height: 30em;
+    transform: translateX(-50%) translateY(-50%);
+}
 /* BOX BEHIND */
 article {
     display: flex;
@@ -138,74 +174,20 @@ article {
 }
 .box-behind {
    position: absolute;
-   opacity: 0.7;
+   opacity: 0.6;
    top: 2.5rem;
    right: -1rem;
    width: 90%;
    height: 25em;
 
-   /*background: rgb(166, 186, 219);*/
    background: rgb(161, 178, 204);
    border-radius: 5px;
-   border: rgb(9, 36, 36) solid 3px;
+   border: rgb(36, 59, 78) solid 3px;
+
+   box-shadow: 4px -5px 15px 8px rgba(204, 204, 204, 0.8);
 }
 #box-behind-qui {
     height: 22em;
-}
-#box-behind-quoi {
-    height: 32em;
-}
-
-/* PARALLAX 
-.parallax {
-    background-image: url('images/parallax_images/us2.jpeg');
-
-    min-height: 250px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallax2 {
-    background-image: url('images/wildfire.jpeg');
-
-    min-height: 250px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-
-
-
-/* BACK TO TOP */
-.bi-arrow-up-square {
-    width: 40px;
-    height: 40px;
-    background: transparent;
-}
-.back-to-top {
-    background: transparent;
-    position: absolute;
-    right: 5%;
-    bottom: 0;
-    opacity: 0.7;
- }
-.back-to-top:hover {
-    opacity: 1;
- }
- .back-to-top:visited {
-     color: black;
-     text-decoration: none;
- }
- .back-to-top a {
-     color: black;
- }
- .back-to-top a:hover {
-    color: black;
 }
  
 
@@ -214,13 +196,18 @@ footer {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px -9px 20px 2px rgba(204,204,204,0.4);
+    height: auto;
+
+    background-image: url('images/bg-footer.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 footer a {
     color: black;
     text-decoration: none;
 }
 footer .list-group-item:hover {
-    opacity: 0.7;
+    opacity: 0.8;
     cursor: pointer;
 }
 footer a:hover {
@@ -237,16 +224,20 @@ footer #signature {
     margin-top: 11.5px;
     width: 150px;
     height: 2px;
-    background: black;
+    background: ivory;
 }
 footer #info {
     margin-top: 2.5em;
+    padding-bottom: 2.5em;
+
 }
 footer ul li {
     height: 6em;
     padding: 1em;
 }
-
+#info, #signature {
+    color: ivory;
+}
 
 
 /* MEDIA QUERIES */
@@ -257,9 +248,26 @@ footer ul li {
 }*/
 
 @media screen and (min-width: 992px) {
-    .content {
+    article {
         width: 60vw;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    .parallax {
+        width: 100vw;
+    }
+    .parallax-help .box-behind-parallax {
+        top: -2em;
+    }
+    .parallax-help {
+        margin-bottom: 5em;
+    }
+    video {
+        width: 100vw;
+    }
+
+    .footer {
+        margin-top: 5em;
     }
 }
