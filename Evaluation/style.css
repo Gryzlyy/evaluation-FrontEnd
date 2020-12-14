@@ -4,6 +4,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+body p {
+    font-size: 17px;
+}
 
 .headr {
     height: 80vh;
@@ -13,6 +16,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-bottom: black solid 1px;
 }
 #logo-wwf {
     position: absolute;
@@ -21,8 +25,11 @@ body {
     opacity: 0.85;
 }
 h1 {
-    font-size: 25px;
+    position: relative;
+    top: -2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+h2 {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 /* SCROLL DOWN HEADER */
 .scroll-down-headr {
@@ -51,16 +58,16 @@ h1 {
     font-size: 1rem;
 }
 #div-don {
-    background-color: rgb(253, 252, 242);
+    background-color: rgb(255, 255, 250);
     color: black;
     width: 100%;
 }
 .btn-don {
-    background: rgb(255, 255, 240);
-    border: solid 3px rgb(36, 59, 78);
+    background: rgb(222, 114, 0);
+    border: solid 2px rgb(36, 59, 78);
     width: 90%;
     height: 5em;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 #div-don > .btn-don:hover {
     transform: scale(1.1, 1.1);
@@ -71,11 +78,11 @@ h1 {
 .content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
  /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');*/
     background-size: cover;
     background-repeat: no-repeat;
-    background: rgb(253, 252, 242);
+    background: rgb(255, 255, 250);
 
     padding-top: 5em;
 
@@ -88,7 +95,7 @@ h1 {
     padding: 3rem;
 
     z-index: 1;
-    background: rgb(255, 255, 240);
+    background: rgb(233, 196, 151);
     border: rgb(52, 84, 111) solid 3px;
     border-radius: 5px;
 }
@@ -240,12 +247,68 @@ footer ul li {
 }
 
 
+/* SECOND PAGE */
+.month {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    padding-top: 1em;
+    padding: 2rem;
+    border: solid black 2px;
+    border-radius: 3px;
+}
+.month p {
+    line-height: 2em;
+}
+.monthName {
+    font-weight: 800;
+}
+h4 {
+    border-top: solid gray 1px;
+}
+
+.btn-actu:hover {
+    opacity: 0.8;
+}
+.img-actu {
+    width: 60vw;
+    height: 10em;
+
+    margin-bottom: 2em;
+    
+    border: 1px black solid;
+}
+
+.back-to-top {
+    background: transparent;
+    position: relative;
+    left: 45%;
+    right: 45%;
+    opacity: 0.7;
+ }
+ .back-to-top:visited {
+     color: black;
+ }
+ .back-to-top:hover {
+     opacity: 1;
+ }
+ .bi-arrow-up-square {
+     width: 40px;
+     height: 40px;
+     background: transparent;
+ }
+
+
+
+
+
 /* MEDIA QUERIES */
-/*@media screen and (max-height: 700px) {
+@media screen and (max-height: 700px) {
     .scroll-down-headr {
         display: none;
     }
-}*/
+}
 
 @media screen and (min-width: 992px) {
     article {
@@ -271,3 +334,4 @@ footer ul li {
         margin-top: 5em;
     }
 }
+
