@@ -1,16 +1,15 @@
 body {
-    font-family: Avenir, sans-serif;
+    font-family: 'Avenir', sans-serif;
     /*background-image: url('images/bg1.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
 }
 body p {
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .headr {
     height: 80vh;
-    min-height: 500px;
     width: 100vw;
     background-image: url('images/polarbear2.jpeg');
     background-size: cover;
@@ -29,19 +28,21 @@ h1 {
     top: -2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-h2 {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+h2 {
+    font-family: 'Avenir', sans-serif;
+}
 
 /* SCROLL DOWN HEADER */
 .scroll-down-headr {
    background: transparent;
    position: absolute;
-   left: 45%;
-   right: 45%;
+   left: 50%;
+   right: 50%;
    bottom: 25%;
    opacity: 0.7;
 }
 .scroll-down-headr:visited {
-    color: black;
+    color: rgb(51, 58, 65);
 }
 .scroll-down-headr:hover {
     opacity: 1;
@@ -64,7 +65,7 @@ h2 {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida S
 }
 .btn-don {
     background: rgb(222, 114, 0);
-    border: solid 2px rgb(36, 59, 78);
+    border: solid 2px rgb(51, 58, 65);
     width: 90%;
     height: 5em;
     border-radius: 3px;
@@ -76,8 +77,6 @@ h2 {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida S
 
 /* CONTENT */
 .content {
-    display: flex;
-    flex-direction: column;
     width: 100vw;
  /* background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');*/
     background-size: cover;
@@ -96,7 +95,7 @@ h2 {font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida S
 
     z-index: 1;
     background: rgb(233, 196, 151);
-    border: rgb(52, 84, 111) solid 3px;
+    border: rgb(51, 58, 65) solid 3px;
     border-radius: 5px;
 }
 
@@ -200,14 +199,18 @@ article {
 
  /* FOOTER */
 footer {
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0px -9px 20px 2px rgba(204,204,204,0.4);
+
     height: auto;
+    width: 100vw;
 
     background-image: url('images/bg-footer.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+footer p {
+    font-size: 15px;
+    font-weight: 800;
 }
 footer a {
     color: black;
@@ -222,6 +225,9 @@ footer a:hover {
 }
 footer #signature {
     margin-top: 5em;
+    font-weight: 900;
+    text-shadow: black 2px 1px;
+    color: ivory;
 }
 #signature::after {
     content: "";
@@ -236,51 +242,45 @@ footer #signature {
 footer #info {
     margin-top: 2.5em;
     padding-bottom: 2.5em;
-
+    text-shadow: black 2px 1px;
+    color: ivory;
 }
 footer ul li {
     height: 6em;
     padding: 1em;
 }
-#info, #signature {
-    color: ivory;
-}
 
 
 /* SECOND PAGE */
-.month {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-    padding-top: 1em;
-    padding: 2rem;
-    border: solid black 2px;
-    border-radius: 3px;
+.navbar {
+    width: 100%;
+    border-bottom: solid 1px rgb(51, 58, 65);
+
 }
-.month p {
-    line-height: 2em;
-}
-.monthName {
-    font-weight: 800;
+.logo {
+    width: 4em;
+    height: 4em;
+    opacity: 0.85;
 }
 h4 {
     border-top: solid gray 1px;
 }
-
 .btn-actu:hover {
     opacity: 0.8;
 }
-.img-actu {
-    width: 60vw;
-    height: 10em;
-
-    margin-bottom: 2em;
+.disclaimer {
+    border: black 2px solid;
+    border-radius: 5px;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
     
-    border: 1px black solid;
+    background: rgb(222, 114, 0);
+    width: 80vw;
 }
 
-.back-to-top {
+/*.back-to-top {
     background: transparent;
     position: relative;
     left: 45%;
@@ -297,9 +297,7 @@ h4 {
      width: 40px;
      height: 40px;
      background: transparent;
- }
-
-
+ }*/
 
 
 
