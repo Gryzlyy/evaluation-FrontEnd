@@ -15,7 +15,7 @@ body p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: black solid 1px;
+    border-bottom: rgb(51, 58, 65) solid 2px;
 }
 #logo-wwf {
     position: absolute;
@@ -26,14 +26,16 @@ body p {
 h1 {
     position: relative;
     top: -2em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschwiehgtfoler, 'Arial Narrow Bold', sans-serif;
 }
 h2 {
     font-family: 'Avenir', sans-serif;
 }
 
+
 /* SCROLL DOWN HEADER */
 .scroll-down-headr {
+   display: none;
    background: transparent;
    position: absolute;
    left: 50%;
@@ -42,7 +44,7 @@ h2 {
    opacity: 0.7;
 }
 .scroll-down-headr:visited {
-    color: rgb(51, 58, 65);
+    color: black;
 }
 .scroll-down-headr:hover {
     opacity: 1;
@@ -64,14 +66,14 @@ h2 {
     width: 100%;
 }
 .btn-don {
-    background: rgb(222, 114, 0);
+    background: rgb(233, 236, 240);
     border: solid 2px rgb(51, 58, 65);
     width: 90%;
     height: 5em;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 #div-don > .btn-don:hover {
-    transform: scale(1.1, 1.1);
+    background: orange;
 } 
 
 
@@ -86,16 +88,25 @@ h2 {
     padding-top: 5em;
 
 }
+article {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    width: 90vw;
+}
 .paragraphe {
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 5%;
     margin-bottom: 10rem;
     margin-top: 5rem;
-    padding: 3rem;
+    padding: 2rem;
 
     z-index: 1;
-    background: rgb(233, 196, 151);
-    border: rgb(51, 58, 65) solid 3px;
+
+    background:rgb(233, 236, 240);
+    text-shadow: white 1px 1px;
+
+    border: rgb(51, 58, 65) solid 2px;
     border-radius: 5px;
 }
 
@@ -113,8 +124,12 @@ h3::after {
     height: 2px;
     background: black;
 }
+.content h3 {
+    font-weight: bold;
+}
 .content p {
     line-height: 2.7;
+    font-weight: 500;
 }
 #pourquoi a {
     padding-bottom: 5em;
@@ -140,9 +155,12 @@ h3::after {
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 10rem;
-    margin-top: 2rem;
-    padding: 3rem;
+    margin-top: 3rem;
+    padding: 1rem;
+
     z-index: 2;
+
+    text-shadow: white 1px 1px;
 }
 .box-behind-parallax {
     position: absolute;
@@ -152,43 +170,47 @@ h3::after {
     height: 30em;
     z-index: 1;
 }
+
+#Join {
+    margin-top: 5em;
+}
 .box-behind-parallax-help {
         position: absolute;
-        top: 4.4em;
+        top: 4.2em;
     
-        opacity: 0.8;
+        opacity: 0.75;
         background: white;
         width: 100%;
-        height: 17.1em;
+        height: 17.6em;
         z-index: 1;
+}
+.parallax-help {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
 }
 video { 
     position: absolute;
     top: 13em;
     z-index: 0;
     left: 50%;
+    right: 50%;
     width: 100%;
     height: 30em;
     transform: translateX(-50%) translateY(-50%);
 }
 /* BOX BEHIND */
-article {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border-radius: 5px;
-}
 .box-behind {
    position: absolute;
    opacity: 0.6;
-   top: 2.5rem;
+   top: 4rem;
    right: -1rem;
    width: 90%;
    height: 25em;
 
-   background: rgb(161, 178, 204);
+   background: rgb(247, 219, 191);
    border-radius: 5px;
-   border: rgb(36, 59, 78) solid 3px;
+   border: rgb(36, 59, 78) solid 2px;
 
    box-shadow: 4px -5px 15px 8px rgba(204, 204, 204, 0.8);
 }
@@ -200,9 +222,8 @@ article {
  /* FOOTER */
 footer {
     box-shadow: 0px -9px 20px 2px rgba(204,204,204,0.4);
-
-    height: auto;
-    width: 100vw;
+    
+    min-width: 100vw;
 
     background-image: url('images/bg-footer.jpeg');
     background-size: cover;
@@ -210,7 +231,7 @@ footer {
 }
 footer p {
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 700;
 }
 footer a {
     color: black;
@@ -241,7 +262,7 @@ footer #signature {
 }
 footer #info {
     margin-top: 2.5em;
-    padding-bottom: 2.5em;
+    padding: 2.5em;
     text-shadow: black 2px 1px;
     color: ivory;
 }
@@ -254,20 +275,26 @@ footer ul li {
 /* SECOND PAGE */
 .navbar {
     width: 100%;
-    border-bottom: solid 1px rgb(51, 58, 65);
-
 }
 .logo {
     width: 4em;
     height: 4em;
     opacity: 0.85;
 }
+
 h4 {
     border-top: solid gray 1px;
 }
 .btn-actu:hover {
     opacity: 0.8;
 }
+
+.breadcrumb {
+    border-bottom: solid 2px rgb(51, 58, 65);
+
+
+}
+
 .disclaimer {
     border: black 2px solid;
     border-radius: 5px;
@@ -276,41 +303,63 @@ h4 {
     margin-right: auto;
     padding: 1em;
     
-    background: rgb(222, 114, 0);
-    width: 80vw;
+    background: rgb(255, 245, 227);
+    width: 90vw;
 }
 
-/*.back-to-top {
-    background: transparent;
-    position: relative;
-    left: 45%;
-    right: 45%;
-    opacity: 0.7;
- }
- .back-to-top:visited {
-     color: black;
- }
- .back-to-top:hover {
-     opacity: 1;
- }
- .bi-arrow-up-square {
-     width: 40px;
-     height: 40px;
-     background: transparent;
- }*/
+#accordion {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
+.btn-collapsible {
+    background: rgb(233, 236, 240);
+    color: red;
+}
 
 
 /* MEDIA QUERIES */
-@media screen and (max-height: 700px) {
-    .scroll-down-headr {
+
+    /*   if < 500px : adjust margins and positions */
+@media screen and (max-width: 499px) {
+   h1 {
+       top: -1em;
+   }
+   
+   .paragraphe, .box-behind {
+       margin-right: -2%;
+   }
+   #accordion, h3, .disclaimer {
+       margin-left: 5%;
+       margin-right: 6%;
+   } 
+}
+
+    /* if < 401px : adjust margins, video & box-behind display-none */
+@media screen and (max-width: 400px) {
+    .box-behind {
+    display: none;
+    }
+    article {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    video {
         display: none;
     }
 }
 
-@media screen and (min-width: 992px) {
+    /* if < 451px : overflow of parallax leopard hidden */
+@media screen and (max-width: 450px) {
+    .paragraphe-parallax {
+        overflow: hidden;
+    }
+}
+
+    /* if > 950px */
+@media screen and (min-width: 950px) {
     article {
-        width: 60vw;
+        width: 70vw;
         margin-left: auto;
         margin-right: auto;
     }
@@ -325,7 +374,12 @@ h4 {
         margin-bottom: 5em;
     }
     video {
-        width: 100vw;
+        width: 100%;
+    }
+    #Join p {
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer {
@@ -333,3 +387,42 @@ h4 {
     }
 }
 
+/* help-to-scroll only on large screen */
+@media screen and (min-width: 1400px) {
+    .scroll-down-headr {
+        display: initial;
+    }
+    .parallax {
+        height: 23em;
+    }
+    #Join p {
+        width: 55vw;
+    }
+}
+
+ /* adjust box-behind according to current width */
+@media screen and (min-width: 540px) {
+    .box-behind {
+        height: 22em;
+    }
+}
+@media screen and (min-width: 655px) {
+    .box-behind {
+        height: 20em;
+    }
+}
+@media screen and (min-width: 700px) {
+    #box-behind-qui {
+        height: 19em;
+    }
+}
+@media screen and (min-width: 820px) {
+    .box-behind {
+        height: 18em;
+    }
+}
+@media screen and (min-width: 1277px) {
+    #box-behind-qui {
+        height: 17em;
+    }
+}
