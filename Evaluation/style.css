@@ -15,8 +15,10 @@ body p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: rgb(51, 58, 65) solid 2px;
+    /*border-bottom: rgb(51, 58, 65) solid 2px;*/
 }
+
+
 #logo-wwf {
     position: absolute;
     width: 6em;
@@ -27,9 +29,6 @@ h1 {
     position: relative;
     top: -2em;
     font-family: Impact, Haettenschwiehgtfoler, 'Arial Narrow Bold', sans-serif;
-}
-h2 {
-    font-family: 'Avenir', sans-serif;
 }
 
 
@@ -57,23 +56,40 @@ h2 {
 
 /* DIV DON */ 
 #don-wwf {
-    min-height: 15vh;
-    font-size: 1rem;
+    height: 10vh;
+}
+#don-wwf a {
+    text-decoration: none;
 }
 #div-don {
-    background-color: rgb(255, 255, 250);
+    background-color: rgb(233, 236, 240);
     color: black;
     width: 100%;
 }
-.btn-don {
-    background: rgb(233, 236, 240);
-    border: solid 2px rgb(51, 58, 65);
+h2 {
+    font-family: 'Avenir', sans-serif;
+    font-weight: bold;
+    padding: 0;
+}
+em {
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+/*.btn-don {
+    background: red;
+
+    border-bottom: solid 2px rgb(51, 58, 65);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 2px;
+
     width: 90%;
     height: 5em;
-    border-radius: 2px;
-}
+}*/
 #div-don > .btn-don:hover {
-    background: orange;
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
 } 
 
 
@@ -108,6 +124,13 @@ article {
 
     border: rgb(51, 58, 65) solid 2px;
     border-radius: 5px;
+}
+.link-to-action {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.link-to-action a {
+    text-decoration: none;
 }
 
 .content > h3, p {
@@ -244,27 +267,37 @@ footer .list-group-item:hover {
 footer a:hover {
     color: black;
 }
+footer .list-group-item {
+    background: rgb(233, 236, 240);
+}
 footer #signature {
     margin-top: 5em;
     font-weight: 900;
     text-shadow: black 2px 1px;
     color: ivory;
 }
-#signature::after {
+#signature::after, #credit::after, #etoile::after {
     content: "";
     display: block;
+
     margin-left: auto;
     margin-right: auto;
-    margin-top: 11.5px;
-    width: 150px;
+    margin-top: 1.5em;
+
+    width: 250px;
     height: 2px;
+
     background: ivory;
 }
-footer #info {
-    margin-top: 2.5em;
-    padding: 2.5em;
+#info, #credit, #etoile {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
     text-shadow: black 2px 1px;
     color: ivory;
+}
+#credit, #etoile {
+    margin: 0;
 }
 footer ul li {
     height: 6em;
@@ -289,12 +322,6 @@ h4 {
     opacity: 0.8;
 }
 
-.breadcrumb {
-    border-bottom: solid 2px rgb(51, 58, 65);
-
-
-}
-
 .disclaimer {
     border: black 2px solid;
     border-radius: 5px;
@@ -315,6 +342,15 @@ h4 {
 .btn-collapsible {
     background: rgb(233, 236, 240);
     color: red;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+    border-bottom: solid 2px rgb(51, 58, 65);
+    background: rgb(233, 236, 240);
+}
+.breadcrumb button {
+    border: 0;
 }
 
 
@@ -354,6 +390,10 @@ h4 {
     .paragraphe-parallax {
         overflow: hidden;
     }
+    .parallax {
+        height: 24em;
+        padding-bottom: 0;
+    }
 }
 
     /* if > 950px */
@@ -391,12 +431,16 @@ h4 {
 @media screen and (min-width: 1400px) {
     .scroll-down-headr {
         display: initial;
+        top: 16.5em;
     }
     .parallax {
         height: 23em;
     }
     #Join p {
         width: 55vw;
+    }
+    .headr {
+        height: 90vh;
     }
 }
 
