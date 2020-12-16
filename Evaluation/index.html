@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-	 crossorigin="anonymous">
+     crossorigin="anonymous">
 	<title>Evaluation</title>
 </head>
 
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                         <!-- SCROLL DOWN -->
-                    <a href="#content" class="scroll-down-headr">
+                    <a href="#Quoi" class="scroll-down-headr">
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                             <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
@@ -33,52 +33,73 @@
                 </div>
             </div>
         </header>
-        <nav class="mx-2 navbar navbar-expand-md bg-light navbar-light" id="navbar">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+            <!-- NAVBAR -->
+        <nav class=" navbar navbar-expand-md bg-light navbar-light" id="navbar">
+                <button class="mx-3 navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item mx-2">
-                        <a class="nav-link active" href="index.html">Accueil</a>
+                        <a class="mx-2 nav-link active" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="actions.html">Nos champs d'actions</a>
+                        <a class="mx-2 nav-link" href="actions.html">Nos champs d'actions</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="join.html">Nous rejoindre</a>
+                        <a class="mx-2 nav-link" href="#">Nous rejoindre</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="don.html">Faire un don</a>
+                        <a class="mx-2 nav-link" href="don.html">Faire un don</a>
                     </li>  
                 </ul>
             </div>  
         </nav>
               
-            <!--DIV DON-->
+            <!-- DIV DONS -->
         <div class="row mb-5" id="don-wwf">
             <div id="div-don" class="text-center text-sm-center text-md-center text-lg-center text-xl-center">
-                    <a href="#">
-                        <button class="btn btn-warning col-3 mx-2 my-2">
+                    <a href="don.html">
+                        <button class="btn btn-warning col-3 mx-2 my-2" id="btn1" type="button">
                             <h2>Je donne 10€<em>*</em>  
                             </h2>
                         </button>
                     </a>
-                    <a href="#">
-                        <button class="btn btn-warning col-3 mx-2 my-2">
+                    <a href="don.html">
+                        <button class="btn btn-warning col-3 mx-2 my-2" id="btn50" type="button">
                             <h2>Je donne 50€<em>*</em>  
                             </h2>
                         </button>
                     </a>
-                    <a href="#">
-                        <button class="btn btn-warning col-3 mx-2 my-2">
+                    <a href="don.html">
+                        <button class="btn btn-warning col-3 mx-2 my-2" id="btn100" type="button">
                             <h2>Je donne 100€<em>*</em>
                             </h2>
                         </button>
                     </a>    
             </div>
         </div>
-    
+
+        <!--  POP UP INSCRIPTION 
+        <div id="overlay" class="overlay">
+            <div class="popup" id="popup">
+                <h2 class="text-center">
+                    VOUS SOUHAITEZ NOUS REJOINDRE ?
+                    <button id="btnClose" class="btnClose">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                            <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                    </button>
+                </h2>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem voluptatem ex aperiam aliquid vel exercitationem soluta, dolores illo eaque, quos hic laudantium sunt eos perspiciatis non earum sapiente excepturi!
+                </p>
+            </div>
+        </div> -->
+
+
             <!--CONTENT-->
         <section class="content" id="content">
                 <article class="content-wrapper">
@@ -135,6 +156,8 @@
         </section>
     </div>
 
+    
+
             
 
                 <!--FOOTER-->
@@ -142,7 +165,7 @@
                 <div class="row col-6 mx-2 mt-5 list-group list-group-horizontal text-center">
                     <a href="don.html"><span class="shadow list-group-item rounded my-2">FAIRE UN DON
                     </span></a>
-                    <a href="join.html"><span class="shadow list-group-item rounded my-2">REJOIGNEZ L'ACTION
+                    <a href="#"><span class="shadow list-group-item rounded my-2">REJOIGNEZ L'ACTION
                     </span></a>
                 </div>
                 <p class="text-center mb-1" id="signature">2020</p>
@@ -159,8 +182,9 @@
                 </p>
 
         </footer>  
-</body>
+</body> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </html>

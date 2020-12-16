@@ -163,7 +163,7 @@ h3::after {
     display: flex;
     background-image: url("images/parallax_images/parallax-bg-1.jpeg");
   
-    height: 30rem;
+    height: 31rem;
     width: 100vw;
   
     background-attachment: fixed;
@@ -190,7 +190,7 @@ h3::after {
     opacity: 0.75;
     background: white;
     width: 100%;
-    height: 30em;
+    height: 31em;
     z-index: 1;
 }
 
@@ -305,9 +305,9 @@ footer ul li {
 }
 
 
-/* SECOND PAGE */
+/* ACTION.HTML */
 .navbar {
-    width: 100%;
+    width: 100vw;
 }
 .logo {
     width: 4em;
@@ -333,6 +333,9 @@ h4 {
     background: rgb(255, 245, 227);
     width: 90vw;
 }
+.disclaimer h3 {
+    
+}
 
 #accordion {
     margin-left: 5%;
@@ -348,10 +351,56 @@ h4 {
 .breadcrumb {
     border-bottom: solid 2px rgb(51, 58, 65);
     background: rgb(233, 236, 240);
+
+    width: 100vw;
 }
 .breadcrumb button {
     border: 0;
 }
+
+/* CCV POP UP */
+#ccvInfoHelp {
+    position: absolute;
+    left: 5em;
+    top: 2em;
+    display: none;
+}  
+.popupCCV {
+    margin: 20% auto;
+    width: 20em;
+    height: 15em;
+    overflow: scroll;
+    background: rgb(231, 231, 231);
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERIES */
