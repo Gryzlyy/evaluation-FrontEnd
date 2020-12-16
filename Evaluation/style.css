@@ -377,7 +377,26 @@ h4 {
 }
 
 
+.overlay {
+    background: lightgray;
+    position: fixed;
+    top: 10em;
+    display: none;
+}
 
+.popup {
+    margin: 10% auto;
+    width: 50vw;
+    height: 20vh;
+    background: red;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.btnClose {
+    cursor: pointer;
+    float: right;
+}
 
 
 

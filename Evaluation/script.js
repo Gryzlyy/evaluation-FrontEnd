@@ -37,3 +37,16 @@ infoHelp.addEventListener('mouseleave', () => {
 ccvClose.addEventListener('click', () => {
     infoHelp.style.display = 'none'
 })
+
+
+var overLayPopUp = document.getElementById('overlay');
+var btnOpenPopUp = document.getElementById('btnOpen');
+var btnClosePopUp = document.getElementById('btnClose');
+
+btnOpenPopUp.addEventListener('click', () => {
+    console.log('ntm');
+    overLayPopUp.style.display = 'block';
+})
+btnClosePopUp.addEventListener('click', () => {
+    overLayPopUp.style.display = 'none';
+})
