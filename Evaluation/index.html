@@ -48,9 +48,6 @@
                         <a class="mx-2 nav-link" href="actions.html">Nos champs d'actions</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="mx-2 nav-link" href="#">Nous rejoindre</a>
-                    </li>
-                    <li class="nav-item mx-2">
                         <a class="mx-2 nav-link" href="don.html">Faire un don</a>
                     </li>  
                 </ul>
@@ -61,22 +58,22 @@
         <div class="row mb-5" id="don-wwf">
             <div id="div-don" class="text-center text-sm-center text-md-center text-lg-center text-xl-center">
                     <a href="don.html">
-                        <button class="btn btn-warning col-3 mx-2 my-2" id="btn1" type="button">
+                        <a class="btn btn-warning col-3 mx-2 my-2" id="btn1" href="don.html?don=10">
                             <h2>Je donne 10€<em>*</em>  
                             </h2>
-                        </button>
+                        </a>
                     </a>
                     <a href="don.html">
-                        <button class="btn btn-warning col-3 mx-2 my-2" id="btn50" type="button">
+                        <a class="btn btn-warning col-3 mx-2 my-2" id="btn50" href="don.html?don=50">
                             <h2>Je donne 50€<em>*</em>  
                             </h2>
-                        </button>
+                        </a>
                     </a>
                     <a href="don.html">
-                        <button class="btn btn-warning col-3 mx-2 my-2" id="btn100" type="button">
+                        <a class="btn btn-warning col-3 mx-2 my-2" id="btn100" href="don.html?don=100">
                             <h2>Je donne 100€<em>*</em>
                             </h2>
-                        </button>
+                        </a>
                     </a>    
             </div>
         </div>
@@ -133,11 +130,55 @@
                     <div id="Join" class="paragraphe-parallax">
                         <h3 class="text-center mt-1">COMMENT POUVEZ-VOUS LE FAIRE ?</h3>
                         <p class="text-justify text-center mt-3 p-1">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laudantium, unde dicta rem perferendis provident qui optio debitis!</p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laudantium, unde dicta rem perferendis provident qui optio debitis!
+                        </p>
                     </div>
+                    
                 </article>
+                <button class="mt-2 btnOpen text-center btn btn-warning col-6" id="btnOpen">DEVENIR BÉNÉVOLE POUR <strong>WWF FRANCE</strong></button>
         </section>
     </div>
+
+        <!-- POP UP INSCRIPTION -->
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" id="bi-x" class="bi bi-x" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                <h2 class="text-center mb-3">
+                    REJOIGNEZ L'ÉQUIPE DE WWF FRANCE
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi vero temporibus distinctio voluptas repellat. Inventore, perspiciatis dignissimos quam pariatur saepe doloribus, eaque exercitationem animi sapiente nisi repellat sed maxime sunt!
+                </p>
+                <form>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <input type="text" class="form-control" placeholder="Votre prénom">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <input type="text" class="form-control" placeholder="Votre nom">
+                        </div>
+                        <div class="col-8">
+                            <input type="text" class="form-control" placeholder="Votre adresse mail">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Votre âge">
+                        </div>
+                        <div class="col-sm-10 my-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                <label class="form-check-label" for="gridCheck1">
+                                Je souhaite recevoir la Newsletter mensuelle
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <button class="btn btn-success mt-5 col-12" type="submit" id="btn-inscription">VALIDER MON INSCRIPTION</button>
+            </div>
+        </div>
 
     
 
@@ -147,8 +188,6 @@
         <footer class="row d-flex justify-content-center">
                 <div class="row col-6 mx-2 mt-5 list-group list-group-horizontal text-center">
                     <a href="don.html"><span class="shadow list-group-item rounded my-2">FAIRE UN DON
-                    </span></a>
-                    <a href="#"><span class="shadow list-group-item rounded my-2">REJOIGNEZ L'ACTION
                     </span></a>
                 </div>
                 <p class="text-center mb-1" id="signature">2020</p>

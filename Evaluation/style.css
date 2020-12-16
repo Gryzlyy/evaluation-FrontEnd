@@ -177,7 +177,7 @@ h3::after {
 .paragraphe-parallax {
     margin-left: 2%;
     margin-right: 2%;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
     margin-top: 3rem;
     padding: 1rem;
 
@@ -198,14 +198,14 @@ h3::after {
     margin-top: 5em;
 }
 .box-behind-parallax-help {
-        position: absolute;
-        top: 4.2em;
+    position: absolute;
+    top: 4.2em;
     
-        opacity: 0.75;
-        background: white;
-        width: 100%;
-        height: 17.6em;
-        z-index: 1;
+    opacity: 0.75;
+    background: white;
+    width: 100%;
+    height: 17.6em;
+    z-index: 1;
 }
 .parallax-help {
     margin-left: auto;
@@ -215,11 +215,13 @@ h3::after {
 video { 
     position: absolute;
     top: 13em;
-    z-index: 0;
     left: 50%;
     right: 50%;
+
     width: 100%;
     height: 30em;
+    
+    z-index: 0;
     transform: translateX(-50%) translateY(-50%);
 }
 /* BOX BEHIND */
@@ -376,27 +378,58 @@ h4 {
     padding: 1em;
 }
 
+#btn-validation {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
 
 .overlay {
-    background: lightgray;
     position: fixed;
-    top: 10em;
+    top: 5%;
+    left: 4%;
+    right: 6%;
+
     display: none;
+
+    z-index: 5;
 }
 
 .popup {
-    margin: 10% auto;
-    width: 50vw;
-    height: 20vh;
-    background: red;
+    margin: 5% auto;
+    padding: 2em;
+
+    width: 90vw;
+    height: 80vh;
+
+    background: rgba(249, 248, 250, 0.95);
     border: solid 2px black;
     border-radius: 5px;
 }
 
-.btnClose {
-    cursor: pointer;
-    float: right;
+#btnOpen {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5em;
+
+    height: 5em;
+    font-weight: 600;
 }
+
+@keyframes helicoptere {
+    from {transform: rotate(0deg); }
+    to {transform: rotate(360deg); }
+  }
+.bi-x {
+    cursor: pointer;
+    position: relative;
+    top: -3%;
+}
+.bi-x:hover {
+    animation: helicoptere 10s linear 0s infinite;
+}
+
+
 
 
 
@@ -440,7 +473,7 @@ h4 {
 }
 
     /* if < 401px : adjust margins, video & box-behind display-none */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
     .box-behind {
     display: none;
     }
@@ -536,5 +569,32 @@ h4 {
 @media screen and (min-width: 1277px) {
     #box-behind-qui {
         height: 17em;
+    }
+}
+
+@media screen and (min-width: 675px) {
+    .parallax-help {
+        margin-bottom: 5em;
+    }
+}
+@media screen and (min-width: 1785px) {
+    .parallax-help {
+        margin-bottom: 10em;
+    }
+}
+@media screen and (min-width: 1540px) {
+    #Join p {
+        width: 40vw;
+    }
+    #box-behind-qui {
+        height: 13em;
+    }
+    #box-behind-pourquoi, #box-behind-comment {
+        height: 15em;
+    }
+}
+@media screen and (min-width: 2184px) {
+    #Join p {
+        width: 30vw;
     }
 }

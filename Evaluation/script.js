@@ -18,7 +18,7 @@
     // THANKS FOR DONATION
 const validationDon = document.getElementById('btn-validation')
 var montantDon = document.getElementById('monDon')
-validationDon.addEventListener('click', () => {
+if(validationDon) validationDon.addEventListener('click', () => {
     if (montantDon.value > 0)  {
         alert(`Toute l\'équipe de WWF France vous remercie pour votre don de ${montantDon.value}€ !`)
     }
@@ -28,25 +28,48 @@ validationDon.addEventListener('click', () => {
 const ccvInfo = document.getElementById('ccvHelp') 
 const infoHelp = document.getElementById('ccvInfoHelp')
 const ccvClose = document.getElementById('ccvClose')
-ccvInfo.addEventListener('mouseover', () => {
+if(ccvInfo) ccvInfo.addEventListener('mouseover', () => {
     infoHelp.style.display = 'block'
 })
-infoHelp.addEventListener('mouseleave', () => {
+if(infoHelp) infoHelp.addEventListener('mouseleave', () => {
     infoHelp.style.display = 'none'
 })
-ccvClose.addEventListener('click', () => {
+if(ccvClose) ccvClose.addEventListener('click', () => {
     infoHelp.style.display = 'none'
 })
 
-
+    // INSCRIPTION POP UP
 var overLayPopUp = document.getElementById('overlay');
 var btnOpenPopUp = document.getElementById('btnOpen');
-var btnClosePopUp = document.getElementById('btnClose');
+var btnClosePopUp = document.getElementById('bi-x');
+var btnValidationInscription = document.getElementById('btn-inscription')
 
-btnOpenPopUp.addEventListener('click', () => {
-    console.log('ntm');
+if(btnOpenPopUp) btnOpenPopUp.addEventListener('click', () => {
     overLayPopUp.style.display = 'block';
 })
-btnClosePopUp.addEventListener('click', () => {
+if(btnClosePopUp) btnClosePopUp.addEventListener('click', () => {
     overLayPopUp.style.display = 'none';
 })
+if(btnValidationInscription) btnValidationInscription.addEventListener('click', () => {
+    alert('MERCI');
+    overLayPopUp.style.display = 'none';
+
+})
+
+    // VALUES FROM INDEX TO DON
+if($_GET('don')){
+    document.getElementById('monDon').value = $_GET('don');
+}
+function $_GET(param) {
+    var vars = {};
+    window.location.href.replace( location.hash, '' ).replace( 
+        /[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+        function( m, key, value ) { // callback
+            vars[key] = value !== undefined ? value : '';
+        }
+    );
+    if ( param ) {
+        return vars[param] ? vars[param] : null;    
+    }
+    return vars;
+}
