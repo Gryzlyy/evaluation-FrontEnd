@@ -3,8 +3,15 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Actions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="WWF, wwf, don, association, protection animale, danger, animaux"/>
+    <meta name="Revisit-After" content="15 days">
+    <meta name="Robots" content="all">
+    <meta name="Rating" content="general">
+    <meta name="Distribution" content="global">
+    <meta name="Category" content="animals">
+    
+	<title>Les Évènements & Actualités de WWF France</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
@@ -13,6 +20,7 @@
 </head>
 
 <body>
+
         <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md bg-light navbar-light" id="navbar">
         <a class="navbar-brand" href="index.html">
@@ -34,6 +42,8 @@
                 </ul>
             </div>  
     </nav>
+
+
     <!-- BREADCRUMB -->
     <div aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -42,14 +52,17 @@
         </ol>
     </div>
 
+
         <div class="container-fluid">
         <!-- DISCLAIMER -->
+        <span itemscope itemtype="http://schema.org/Event">
         <section class="content">
-            <h3 class="text-center mt-3 mb-3">SITUATION ACTUELLE</h3>
-            <p class="disclaimer mt-5">Madame, Monsieur, chers engagés, sympathisants, compte tenu de la situation sanitaire actuelle, beaucoup de nos évènements ont dûs être annulés et reportés. <br>
+            <h3 class="text-center mt-3 mb-3" id="_description2" itemprop="description">SITUATION ACTUELLE</h3>
+            <p class="disclaimer mt-5 text-center text-justify">Madame, Monsieur, chers engagés, sympathisants, compte tenu de la situation sanitaire actuelle, beaucoup de nos évènements ont dûs être annulés et reportés. <br>
             Nous faisons notre maximum pour vous permettre de nous aider très prochainement lors de divers évenèments : conférences, rassemblements et des manifestations.<br>
             En vous remerciant pour vos actions envers <strong>WWF</strong>, n'oubliez pas de vous abonner à notre newsletter afin d'être les premiers au courant à propos des dates des prochains évènements.</p>
             
+
             <h3 class="text-center mt-5 mb-5">ACTUALITÉS - ÉVÈNEMENTS</h3>
             <!-- COLLAPSIBLE -->
             <div id="accordion">
@@ -254,6 +267,7 @@
             </div>
         </section>
 
+
         <!-- POP UP INSCRIPTION -->
         <div class="overlay" id="overlay">
             <div class="popup" id="popup">
@@ -261,7 +275,7 @@
                     <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                   </svg>
                 <h2 class="text-center mb-3">
-                    REJOIGNEZ L'ÉQUIPE DE WWF FRANCE
+                    REJOIGNEZ L'ÉQUIPE DE <span itemprop="name">WWF FRANCE</span>
                 </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi vero temporibus distinctio voluptas repellat. Inventore, perspiciatis dignissimos quam pariatur saepe doloribus, eaque exercitationem animi sapiente nisi repellat sed maxime sunt!
@@ -294,7 +308,9 @@
                 <button class="btn btn-success mt-5 col-12" type="submit" id="btn-inscription">VALIDER MON INSCRIPTION</button>
             </div>
         </div>
+    </span>
 
+        
     <!--FOOTER-->
     <footer class="row d-flex justify-content-center">
         <div class="row col-6 mx-2 mt-5 list-group list-group-horizontal text-center">
@@ -309,8 +325,10 @@
             </svg>
         </a>
         <p class="text-center text-justify" id="info">
-            66 % du montant de votre don au profit du WWF peut être déduit de votre impôt sur le revenu. <br>
-            Le Fonds Mondial pour la Nature France, dit WWF France est une Fondation reconnue d'utilité publique. <br>
+            66 % du montant de votre don au profit du <span itemscope itemtype="http://schema.org/Event" itemref="_description2">
+                <span itemprop="name">WWF</span></span> peut être déduit de votre impôt sur le revenu. <br>
+            Le Fonds Mondial pour la Nature France, dit <span itemscope itemtype="http://schema.org/Event" itemref="_description2">
+                <span itemprop="name">WWF France</span></span> est une Fondation reconnue d'utilité publique. <br>
             Numéro d’enregistrement et SIREN : 302 518 667.
         </p>
         <p class="text-center text-justify" id="etoile">
@@ -321,6 +339,7 @@
         </p>
     </footer>  
 
+    <noscript>Pour fonctionner correctement, ce site web a besoin que JavaScript soit activé.</noscript>
 
 </body>
     <script src="script.js"></script>
