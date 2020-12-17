@@ -51,9 +51,9 @@ if(btnClosePopUp) btnClosePopUp.addEventListener('click', () => {
     overLayPopUp.style.display = 'none';
 })
 if(btnValidationInscription) btnValidationInscription.addEventListener('click', () => {
-    alert('MERCI');
+    alert(`Bienvenu à bord ! \n Vous allez recevoir un mail avec toute la procédure à suivre afin d'être officiellement l'un des nôtres.
+    \n L'équipe WWF France vous remercie !`);
     overLayPopUp.style.display = 'none';
-
 })
 
     // VALUES FROM INDEX TO DON
